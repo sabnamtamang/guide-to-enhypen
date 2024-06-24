@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.head{
+    background-color: rgb(254, 80, 0);
+    height: 100px;
+}
+.name{
+    color: white;
+    font-size: 2rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+.ii{
+    margin: 10px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    height: 500px;
+    position: relative;
+    top:30px;
+    margin-right: 20px;
+}
+.about{
+    padding: 50px;
+}
+#yang{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    
+}
+.about td{
+    font-size: 1.5rem;
+    padding: 10px;
+    padding-left: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+
+.facts ol{
+    text-align: left;
+    padding-left: 100px;
+    font-size:1.2rem;
+    line-height: 2;
+    word-spacing: 5px;
+
+}
+.facts ol li{
+    list-style-type:disc;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.fact{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+    font-family: Lato-Regular, sans-serif;
+    color: rgb(254, 80, 0);
+}
+@media(max-width:1210){
+    section{
+     font-size: 55%;
+    }
+ }
+ @media (max-width: 480px){
+    .head{
+        width: 414px;
+        height: 79px;
+    }
+    .name{
+        font-size: 1.2rem;
+        position: relative;
+        top: 15px;
+    }
+   .i2 img{
+  display: none;
+    }
+.i1 img{
+   width: 350px;
+   height: 450px;
+   padding-left: 30px;
+}
+.facts ol{
+    padding-left: 20px;
+}
+.about td{
+    font-size: 1rem;
+}
+ }

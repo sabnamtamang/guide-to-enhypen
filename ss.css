@@ -1,0 +1,695 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home {
+    
+    height: 100vh;
+}
+nav{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+}
+nav a{
+    animation: slideTop .5s ease forwards;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.contain{
+    background-color:rgb(21, 21, 62);
+    z-index: 2;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: 30px;
+    color:antiquewhite;
+    cursor: pointer;
+}
+nav ul li{
+    padding: 0 18px;
+    list-style-type: none;
+}
+.image img{
+    margin-right: 100px;
+    padding-top:20px;
+   
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.logo img{
+    height: 27px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.right a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    font-size: 1.15rem;
+    transition: .3s;
+}
+.right a:hover{
+    color:rgb(201, 177, 41);
+}
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#namee{
+    color:rgb(21, 21, 62) ;
+}
+.namee{
+    font-family: "Poppins";
+    color:rgb(21, 21, 62) ;
+    font-size: 5rem;
+    position:absolute;
+    top:250px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.about {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    background-color: rgb(21, 21, 62);
+}
+.background {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.about{
+    padding: 0px;
+    height: 600px;
+}
+.abt{
+    display: grid;
+    grid-template-columns:650px 500px;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    background-color: rgb(21, 21, 62);
+    padding-bottom: 70px;
+    padding-top: 0px;
+}
+.intro{
+    text-align: left;
+    font-size:1.2rem;
+    line-height: 1.9;
+    word-spacing: 5px;
+    animation: slideRight .5s ease forwards;
+    animation-delay: 5s;
+}
+.image img{
+   width: 550px;
+   position: relative;
+   left:30px;
+}
+.enha{
+    background-color: rgb(21, 21, 62);
+    padding: 20px;
+}
+.write{
+    position: relative;
+    bottom:40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style:italic;
+}
+.enhy{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color:rgb(167, 159, 113);
+}
+.enha img{
+    height: 27px;
+    position: relative;
+    right: 550px;
+}
+.albums img{
+    height:200px;
+    width: 200px;
+    display: block;
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.albums a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(21, 21, 62);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 15px;
+    font-family: "Lora", serif;
+}
+.albums a:hover{
+    color:rgb(178, 85, 100);
+}
+.a1{
+    background-color: rgb(128, 128, 150);
+    border: .2rem solid rgb(128, 128, 150);
+    transition: .5s ease;
+    border-radius: .5rem;
+}
+.albums .a1:hover{
+    box-shadow: 0 0 20px 0 rgb(113, 113, 149);
+    transform: scale(1.02);
+}
+.albums{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    color:antiquewhite;
+    grid-auto-flow: row;
+    grid-gap:40px
+}
+.disco{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+}
+.discography{
+    background-color:rgb(180, 180, 195);
+    padding-bottom: 50px;
+}
+.awards{
+    padding: 50px;
+}
+#award{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+.awards th{
+    background-color:rgb(180, 180, 195) ;
+    border:1.5px solid white;
+    padding: 8px;
+    font-size: 1.5rem;
+    color:rgb(21, 21, 62);
+}
+.awards td{
+    border:1.5px solid white;
+    padding: 8px;
+    font-size: 1.5rem;
+    color: white;
+}
+.awards td{
+    text-align: center;
+}
+.acheive{
+    background-color: rgb(21, 21, 62);
+}
+.acheivee{
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    color:rgb(167, 159, 113);
+}
+.Acheivements ol{
+    text-align: left;
+    padding-left: 100px;
+    font-size:1.2rem;
+    line-height: 2;
+    word-spacing: 5px;
+    color:white;
+
+}
+.Acheivements ol li{
+    list-style-type:disc;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.cont img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:20px;
+}
+.content{
+    background-color:rgb(180, 180, 195);
+    padding-top: 15px;
+    padding-bottom: 70px;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 40px;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+.cont a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:rgb(21, 21, 62);
+    font-size: 1.19rem;
+    font-weight: bold;
+    padding-top:40px;
+    padding-bottom:25px;
+    font-family: "Lora", serif;
+
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9{
+    background-color: rgb(214, 210, 210);
+    transition: .5s ease;
+    box-shadow: 0 0 20px 0 rgb(72, 72, 84);
+    border-radius: .5rem;
+    
+}
+.c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover,.c8:hover,.c9:hover{
+    transform: scale(1.03);
+}
+.cont a:hover{
+    color:rgb(178, 85, 100);
+}
+.new{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px;
+    color:rgb(21, 21, 62);
+    font-family: "Roboto", sans-serif;
+}
+.media{
+    background-color:rgb(21, 21, 62) ;
+    padding: 30px;
+    
+}
+.mmedia{
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(222, 210, 147);
+    padding: 20px 20px 30px 20px;
+    font-family: "Roboto", sans-serif;
+}
+.app{
+    width: 1000px;
+    position: relative;
+    left: 60px;
+    border: 7px solid rgb(180, 180, 195);
+    padding: 13px;
+}
+.app ol li a{
+    font-size:1.2rem;
+    line-height: 2;
+    word-spacing: 5px;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style:italic;
+}
+.app ol li{
+    list-style-type: disc;
+    padding-left:15px;
+    color: aliceblue;
+    font-size:28px;
+    position:relative;
+    left: 20px;
+}
+.app a:hover{
+    color:rgb(222, 210, 147);
+}
+.app ol li span{
+    position: relative;
+    left: -15px;
+}
+.inter{
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px;
+    color:white;
+    color:rgb(222, 210, 147);
+    font-family: "Roboto", sans-serif;
+}
+.press{
+    background-color:rgb(180, 180, 195) ;
+    padding-bottom: 25px;
+}
+.articles ol li{
+    list-style-type: disc;
+    padding-left:15px;
+    color:rgb(21, 21, 62);
+    font-size:30px;
+    position: relative;
+    left: 40px;
+    
+}
+.articles ol li a{
+    font-size:1.1rem;
+    line-height: 2.2;
+    word-spacing: 5px;
+    color:rgb(21, 21, 62) ;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    position: relative;
+    left: -15px;
+}
+.articles ol li a:hover{
+    color: rgb(178, 85, 100);
+}
+.public{
+    font-size:1.5rem;
+    color:rgb(21, 21, 62);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+}
+.major{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+   color: rgb(21, 21, 62);
+}
+.info{
+    border: 4px solid rgb(167, 159, 113);
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
+    background-color:rgb(167, 159, 113) ;
+    animation: slideBottom .5s ease forwards;
+    animation-delay: 2s;
+    transition: .5s ease;
+    position: relative;
+    bottom: 5px;
+    
+}
+.info:hover{
+    transform: scale(1.09);
+}
+.info a{
+   position: relative;
+   top:10px;
+   left: 1px;
+   text-decoration: none;
+   color: rgb(21, 21, 62);
+   font-size: 1.3rem;
+   font-family: "Roboto", sans-serif;
+    font-weight: 800;
+   
+}
+.info a:hover{
+    color: rgb(178, 85, 100);
+}
+.social i{
+    font-size: 1.5rem;
+    margin:8px;
+    color: white;
+   position: relative;
+   left: 30px;
+transition: .5s ease;
+bottom: 10px;
+}
+.social i:hover{
+    color: grey;
+    transform: scale(1.099);
+}
+nav .menu i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media(max-width:1210){
+   section{
+    font-size: 55%;
+   }
+}
+@media (max-width: 480px) {
+    nav .menu i{
+        display: block;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+    nav a{
+        animation: none;
+    }
+    #click:checked~.menu i::before{
+        content: "\f00d";
+    }
+    #click:checked~.right ul{
+        left:0%;
+    }
+    .right ul{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        background-color: rgb(25, 25, 91);
+        width: 100%;
+        height: 640px;
+       text-align: center;
+       transition: all 0.3s ease;
+    }
+    .right ul li{
+        margin: 40px 0px;
+    }
+    .right ul li a{
+        font-size: 1.8rem;
+        display: block;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    .disco{
+        font-size: 2rem;
+    }
+    .albums {
+      grid-template-columns: 1fr;
+    }
+    .cont {
+      grid-template-columns: 1fr;
+    }
+    .app {
+      width: 100%;
+      left: 0;
+    }
+    .info {
+      width: 180px;
+      height: 50px;
+      position: relative;
+        bottom: 20px;
+      left: -110px;
+      animation: none;
+    }
+    .abt{
+        padding-bottom: 20px;
+    }
+    .info a{
+        font-size: 1.2rem;
+        position: relative;
+        left: -1px;
+    }
+    .social{
+        width: 350px;
+    
+    }
+    .social i {
+        animation: none;
+        left:1px;
+        bottom: 10px;
+    }
+    .about {
+      padding: 20px;
+      height: 1000px;
+    }
+    .logo img{
+        width: 85px;
+        height: 28px;
+    }
+    .logo{
+        padding-top: 10px;
+    }
+    .abt {
+      grid-template-columns: 2fr;
+    }
+    .intro {
+      font-size: 1rem;
+      line-height: 1.5;
+      width: 350px;
+    }
+    .image img {
+      width: 320px;
+      height: auto;
+      margin: 0;
+      animation: none;
+      align-items: center;
+    left: -18px;
+    text-align: center;
+    }
+    .enhy {
+       font-size: 1.3rem;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .enha{
+        padding: 2px;
+        position: relative;
+        left: 20px;
+    }
+    .enha img {
+      height: 20px;
+      right: 20px;
+    }
+    .write{
+        line-height: 2;
+        font-size: 1.1rem;
+        padding-left: 10px;
+    }
+    .Acheivements ol{
+       padding-left: 19px;
+       font-size: 1.rem;
+  
+    }
+    .acheive{
+        padding: 10px;
+    }
+    .new{
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+    .acheivee{
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .mmedia{
+        font-size:1.5rem;
+     }
+     .inter{
+        font-size: 1.7rem;
+     }
+    .app ol li a{
+        font-size:1.rem ;
+        text-align: center;
+     }
+     .articles{
+         padding-right:20px;
+         width: 380px;
+     }
+     .major{
+         padding: 20px;
+         font-size: 2rem;
+     }
+     .a1{
+        width: 300px;
+        position: relative;
+        left:50px;
+     }
+    .namee{
+        display: none;
+    }
+    .video-bg{
+       display: none;
+    }
+    .background{
+        background-image: url('Dark\ Moon.jpeg');
+        background-size: 400px 800px;
+        background-repeat: no-repeat;
+    }
+    .home{
+        height: 690px;
+    }
+    .menu{
+        position: relative;
+        left: 160px;
+        bottom: 25px;
+    }
+    .awards th{
+        font-size: 1rem;
+    }
+   .awards td{
+    font-size: 1rem;
+   }
+   .c1,.c2,.c3,.c4,.c6,.c7,.c8,.c9,.c5{
+   width: 300px;
+   position: relative;
+   left:50px;
+   }
+  }

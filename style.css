@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}.title{
+    background-color: rgb(254, 80, 0);
+    height: 90px;
+}
+.enha img{
+    height: 120px;
+    width: 330px;
+    position: relative;
+    left: 450px;
+    bottom: 13px;
+}
+
+.profile img{
+    height: 450px;
+    position: relative;
+    left: 280px;
+    top: 10px;
+    padding: 10px;
+}
+.infor{
+    position: relative;
+    top:30px;
+    left:90px;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    word-spacing: 3px;
+    height:370px;
+    width: 1070px;
+    font-family: Lato-Regular, sans-serif;
+    font-weight: 550;
+}
+.infor ol li{
+    list-style-type:disc;
+    padding-bottom: 20px;
+}
+.photo{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 30px 20px;
+    grid-gap:30px;
+    
+}
+.p1,.p2{
+    background-color: rgb(214, 210, 210);
+    transition: .6s ease;
+}
+.photo img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:17px;
+}
+.p1:hover,.p2:hover{
+    transform: scale(1.07);
+}
+.photo a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.p2 img{
+    height: 200px;
+    width:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:17px;
+}
+.photo2{
+    display: grid;
+    grid-template-columns: 250px 250px 250px ;
+    justify-content: center;
+    padding: 20px 20px 30px 20px;
+    grid-gap:30px;
+    
+}
+.photo2 a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.members a:hover{
+    color:rgb(254, 80, 0);
+}
+.text{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    font-family: Lato-Regular, sans-serif;
+    color: rgb(254, 80, 0);
+}
+@media(max-width:1210){
+    section{
+     font-size: 55%;
+    }
+ }
+ @media (max-width: 480px){
+    .title{
+        width: 414px;
+        height: auto;
+    }
+    .enha img{
+        width:170px;
+        height:75px;
+       position: relative;
+       left: 120px;
+       top:2px;
+
+    }
+    .profile img{
+        height: 250px;
+        width: 350px;
+        position: relative;
+        left: 30px;
+    }
+    .infor{
+        width:350px ;
+        height: 800px;
+        padding: 10px;
+        position: relative;
+        left: 40px;
+     }
+     .photo{
+        grid-template-columns: 1fr;
+      padding-top: 0px;
+     }
+     .photo2{
+        grid-template-columns: 1fr;
+     }
+     .p1,.p2{
+        margin: 0 50px;
+        margin-top: 30px;
+        
+    }
+    .text{
+        padding: 0px;
+    }
+    body{
+        width: 400px;
+       }
+
+ }
+
+
